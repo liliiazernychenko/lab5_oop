@@ -60,7 +60,6 @@ def evaluate(expr):
         else:
             arr.append(parse_token(t))
 
-    # множення і ділення
     i = 0
     while i < len(arr):
         if arr[i] == '*':
@@ -74,7 +73,6 @@ def evaluate(expr):
         else:
             i += 1
 
-    # додавання і віднімання
     result = arr[0]
     i = 1
     while i < len(arr):
